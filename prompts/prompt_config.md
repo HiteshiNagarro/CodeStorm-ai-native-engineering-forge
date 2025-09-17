@@ -8,10 +8,10 @@ DESIGN_DOC_PATH=specifications/quick-todo/design
 DESIGN_GUIDELINES=design-guidelines
 
 # Design Asset Paths
-USER_FLOWS_PATH=specifications/quick-todo/design/user-flows
-WIREFRAMES_PATH=specifications/quick-todo/design/wireframes
-COMPONENTS_PATH=specifications/quick-todo/design/components
-ASSETS_PATH=specifications/quick-todo/design/assets
-DESIGN_SPECIFICATIONS_PATH=specifications/quick-todo/design/design-specifications.md
-ACCESSIBILITY_GUIDELINES_PATH=specifications/quick-todo/design/accessibility-guidelines.md
-HANDOFF_DOCUMENTATION_PATH=specifications/quick-todo/design/handoff-documentation.md
+USER_FLOWS_PATH=specifications/{PROJECT_NAME}/design/user-flows
+WIREFRAMES_PATH=specifications/{PROJECT_NAME}/design/wireframes
+COMPONENTS_PATH=specifications/{PROJECT_NAME}/design/components
+ASSETS_PATH=specifications/{PROJECT_NAME}/design/assets
+DESIGN_SPECIFICATIONS_PATH=specifications/{PROJECT_NAME}/design/design-specifications.md
+ACCESSIBILITY_GUIDELINES_PATH=specifications/{PROJECT_NAME}/design/accessibility-guidelines.md
+HANDOFF_DOCUMENTATION_PATH=specifications/{PROJECT_NAME}/design/handoff-documentation.md
