@@ -49,22 +49,13 @@ You will be using these values from the prompt_config.md wherever required
 **Format**: Markdown file or text content
 **Usage**: Boundary conditions for technical decisions
 
-### Input 4: Design Guidelines
+### Input 4: Design Guidelines (MANDATORY)
 **Parameter Name**: `DESIGN_GUIDELINES`
-**Description**: Design guidelines including:
-- Analyze requirements, functional overview, and design tokens.
-- Produce user flows and journey maps for all key user types.
-- Create wireframes for all required screens/pages.
-- Design high-fidelity mockups using provided design tokens.
-- Build interactive prototypes demonstrating core user flows.
-- Develop a documented component library/design system.
-- Provide detailed design specifications for developers (spacing, colors, typography, states).
-- Annotate accessibility guidelines (WCAG compliance).
-- Export all necessary assets (icons, images, graphics).
-- Prepare clear handoff documentation (design files, user flows, component usage).
-- Ensure all deliverables are ready for efficient developer handoff and implementation.
-**Format**: json file
-**Usage**: Boundary conditions for technical decisions
+**Description**: Design Tokens - THE ONLY ACCEPTABLE SOURCE for all design specifications
+- **MANDATORY COMPLIANCE**: All design elements MUST strictly follow design tokens from the JSON file
+- **NO DEVIATIONS**: Custom styling outside design tokens is prohibited
+**Format**: JSON file containing complete design system specifications
+**Usage**: Single source of truth for ALL visual design decisions - non-negotiable compliance required
 
 ## Analysis Process
 
@@ -87,16 +78,17 @@ You will be using these values from the prompt_config.md wherever required
 - Consider security, compliance, and deployment needs.
 
 ### 4. Iterative Prototyping & Validation
-- Rapidly prototype wireframes and high-fidelity mockups using design tokens.
-- Collaborate with stakeholders and developers for feedback and alignment.
-- Conduct usability reviews and iterate on designs for optimal user experience.
-- Validate accessibility (WCAG) and responsive design across devices.
+- Rapidly prototype wireframes and high-fidelity mockups using ONLY design tokens from the JSON file.
+- **MANDATORY**: All visual elements MUST comply strictly with design token specifications.
+- Collaborate with stakeholders and developers for feedback while maintaining design token compliance.
+- Conduct usability reviews ensuring adherence to design system standards.
+- Validate accessibility (WCAG) using ONLY approved design token combinations.
 
 ### 5. Handoff & Implementation Readiness
-- Prepare detailed design specifications and component documentation.
-- Export all necessary assets and design files for development.
-- Provide clear handoff documentation and support for implementation.
-- Ensure all deliverables are ready for efficient developer handoff and future scalability.
+- Prepare detailed design specifications referencing design token values from the JSON file.
+- Export all necessary assets following design system guidelines.
+- Provide clear handoff documentation with design token references.
+- Ensure all deliverables maintain strict compliance with design tokens.
 
 ## Output Deliverables
 
@@ -109,30 +101,33 @@ Set the respective variables for the path to these deliverables in prompt_config
 ### 2. Wireframes 
 - Low-fidelity layouts for all required screens/pages, focusing on structure and usability.
 
-### 3. High-Fidelity Mockups
-- Pixel-perfect screen designs using provided design tokens for colors, typography, and spacing.
+### 3. High-Fidelity Mockups (MANDATORY COMPLIANCE)
+- Pixel-perfect screen designs using EXCLUSIVELY design tokens from the JSON file.
 
-### 4. Interactive Prototypes
-- Clickable prototypes demonstrating core user flows and interactions.
+### 4. Interactive Prototypes (DESIGN TOKEN COMPLIANT)
+- Clickable prototypes demonstrating core user flows with strict adherence to design tokens.
 
-### 5. Component Library / Design System 
-- Documented set of reusable UI components styled with design tokens.
-- Usage guidelines, component states, and accessibility annotations.
+### 5. Component Library / Design System (DESIGN TOKEN STANDARD)
+- Documented set of reusable UI components styled EXCLUSIVELY with design tokens.
+- Usage guidelines ensuring 100% compliance with design token specifications.
 
-### 6. Design Specifications 
-- Detailed specs for developers (spacing, colors, typography, states, responsive behavior).
+### 6. Design Specifications (TOKEN-BASED)
+- Detailed specs for developers referencing specific design token values.
+- **MANDATORY**: All specifications must cite design token references for implementation.
 
-### 7. Accessibility Guidelines 
-- Recommendations and annotations to ensure WCAG compliance and inclusive design.
+### 7. Accessibility Guidelines (TOKEN-COMPLIANT)
+- Recommendations ensuring WCAG compliance using ONLY approved design token combinations.
 
-### 8. Assets Export
-- Exported icons, images, and graphics optimized for web/mobile.
+### 8. Assets Export (DESIGN SYSTEM ALIGNED)
+- Exported icons, images, and graphics following design token standards.
 
 ### 9. Handoff Documentation
 - Clear documentation and links for developers, including design files, user flows, and component usage.
 
 All deliverables should be:
-- User-centered, visually consistent, and technically feasible.
-- Ready for efficient developer handoff and implementation.
-- Organized within the `specifications/{PROJECT_NAME}/design/` folder structure for easy access and maintenance.
-- Ensure that you set the respective variables for the path to these deliverables in prompt_config.md and reuse in the further application journey
+- **Design Token Compliant**: Strict adherence to design token specifications - no deviations allowed.
+- **User-centered**: Visually consistent and technically feasible.
+- **Token-Referenced**: All design decisions must reference design token values.
+- **Ready for efficient developer handoff**: Complete design token implementation guidance included.
+- **Organized within**: `specifications/{PROJECT_NAME}/design/` folder structure for easy access and maintenance.
+- **Token-Documented**: Set respective variables for deliverable paths in prompt_config.md with design token compliance notes.
